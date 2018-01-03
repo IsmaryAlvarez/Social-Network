@@ -1,4 +1,4 @@
-/* Los estilos de tu proyecto */
+ /*Los estilos de tu proyecto */
 /*
   Naranja fondos #fb9200
   MArron fondos #3F2919
@@ -88,6 +88,19 @@
     color: #3F2919;
 }
 
+
+.dentro
+{
+  margin-top: 1em;
+}
+
+/*.tabpanel ul li:hover
+{
+  text-decoration: none;
+  background-color: #ffff;
+}*/
+
+/*-------------------------------------------*/
 
 /*
 #viaje{
@@ -341,4 +354,3 @@ padding-top: 365px;
 #login_password::placeholder{
   color: white;
 }
-*/
