@@ -88,4 +88,17 @@ $("#comidaItaliana").hide();
 $(".circulos").hide();
 });
 
+// pantalla del perfil escondida
+$(".pantallaPerfil").hide();
+
+// funcion para que al hacer click en el boton perfil se despliega la pantalla con 
+// el perfil
+$(".perfil").click(function(){
+  
+  $(".pantallaPerfil").show();
+  $(".first-section").hide();
+  $(".containerFood").hide();
+
+
+});
 

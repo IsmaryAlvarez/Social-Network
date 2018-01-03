@@ -1,7 +1,7 @@
  /*Los estilos de tu proyecto */
 /*
-  Naranja fondos #fb9200
-  MArron fondos #3F2919
+  Naranja fondos #fb9200;
+  MArron fondos #3F2919;
 */
 * {
   font-family: 'Lato', sans-serif;
@@ -89,11 +89,86 @@
 }
 
 
-<<<<<<< Updated upstream
 .dentro
 {
   margin-top: 1em;
 }
+
+/*estilo general de la seccion*/
+.pantallaPerfil
+{
+  /*background-color: #fb9200;*/
+  width: 100%;
+  height: auto;
+  /*flexbox*/
+  /*display: flex;*/ /*habilita flexbox*/
+}
+
+/*estilo logo*/
+.logo
+{
+  margin-top: 1em;
+
+}
+
+.logo p
+{
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 1em;
+  color: #3F2919;
+}
+
+/*foto*/
+.foto
+{
+  background-color: #fb9200;
+}
+
+/*estilo de foto perfil*/
+.fotoPerfil
+{
+  height: 100%;
+  width: auto;
+  background-color: #fb9200;
+  margin: 2em 3em;
+  border-radius: 3em;
+  border: 2px solid #ffff;
+  text-align: center;
+  /*justify-content: center;*/
+}
+
+/*Estilo nombre usuario*/
+.nombreUsuario
+{
+  text-align: center;
+  font-size: 2em;
+  color: #3F2919
+}
+
+.follow
+{
+  text-align: center;
+  font-size: 1.2em;
+  color: #3F2919;
+}
+
+/*estilos de descripcion*/
+.description
+{
+  text-align: center;
+  font-size: 1.5em;
+  color: #3F2919;
+
+}
+
+/*estilo caja description*/
+.cajaDescription
+{
+  padding: 1em 4em;
+}
+
 
 /*.tabpanel ul li:hover
 {
@@ -102,14 +177,14 @@
 }*/
 
 /*-------------------------------------------*/
-=======
+
 .caption img{
     border-radius: 50%;
     height: 4em;
     width: 4em;
 
 }
->>>>>>> Stashed changes
+
 /*circulos de colores*/
 .circulos{
   display: inline-block;
@@ -258,7 +333,6 @@
 .ch-item:hover .ch-info p {
   opacity: 1;
 }
-
 
 
 
