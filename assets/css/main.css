@@ -132,7 +132,7 @@
   height: 100%;
   width: auto;
   background-color: #fb9200;
-  margin: 2em 3em;
+  margin: 0 3em 2em 3em;
   border-radius: 3em;
   border: 2px solid #ffff;
   text-align: center;
@@ -144,7 +144,8 @@
 {
   text-align: center;
   font-size: 2em;
-  color: #3F2919
+  color: #3F2919;
+  margin-top: 1em;
 }
 
 .follow
@@ -160,7 +161,23 @@
   text-align: center;
   font-size: 1.5em;
   color: #3F2919;
+}
 
+/*Estilo icono para devolverse*/
+.iconBack
+{
+  font-size: 3em;
+  cursor: pointer;
+  color: #3F2919;
+  margin: 1em 1em;
+}
+
+.iconBack:hover
+{
+  font-size: 3em;
+  cursor: pointer;
+  color: #ffff;
+  margin: 1em 1em;
 }
 
 /*estilo caja description*/
@@ -168,6 +185,133 @@
 {
   padding: 1em 4em;
 }
+
+/*estilo caja comentarios*/
+.comments
+{
+  border: 1px solid #000;
+  height: 10em;
+  width: 40em;
+  margin: 3em 0;
+  padding: 2em 1em;
+  /*flexbox*/
+ /* display: flex;
+  flex-wrap: wrap;*/
+}
+
+/**/
+/*.naranja
+{
+  background-color: #fb9200;
+}*/
+
+/**/
+.comment1
+{
+  /*flexbox*/
+  display: flex;
+  flex-direction: row;
+}
+
+.comment2
+{
+  /*flexbox*/
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+
+/*estilo titulo*/
+.titleNew
+{
+  margin-left: 3em;
+  font-size: 2em;
+}
+
+/*estilo foto del posteo*/
+.fotoPost
+{
+  height: 6em;
+  width: 6em;
+  border-radius: 5em;
+}
+
+/*estilo input del post*/
+.tituloInput
+{
+  width: 4em;
+}
+
+/*Donde va el texto*/
+#cont 
+{
+  width: 51em;
+  margin: 0 auto;
+  color: #4E4D53;
+  text-align: left;
+  /*border: 1px solid purple;*/ /*ayuda visual*/
+}
+
+/*cuadro de texto*/
+#cont div 
+{
+  display: block;
+  padding: 1em 0.5em;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  outline: 0.1em solid #E5E3F2;
+  background-color: #FFF;
+  /*border: 1px solid orange;*/ /*ayuda visual*/
+
+}
+
+
+/*estilo boton comentario*/
+.btn-comentario
+{
+  height: 2.5em;
+  width: 6em;
+  padding: 0.5em;
+  background-color: #fb9200;
+  text-align: center;
+  border-radius: 2em;
+}
+
+.btn-comentario:hover
+{
+  color: #fb9200;
+  background-color: #3F2919;
+}
+
+/*estilo icono camara*/
+.icon
+{
+  height: 4em;
+  width: 4em;
+}
+
+/*estilo boton subir foto en modal*/
+.btn-subirFoto
+{
+  height: 2.5em;
+  width: 6em;
+  padding: 0.5em;
+  background-color: #fb9200;
+  text-align: center;
+  border-radius: 2em;
+}
+
+.btn-subirFoto:hover
+{
+  color: #fb9200;
+  background-color: #3F2919;
+}
+
+
+/*.icon-camera:before {
+  content: "\e929";
+}*/
+
 
 
 /*.tabpanel ul li:hover
