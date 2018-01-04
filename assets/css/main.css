@@ -132,16 +132,15 @@ border-color: white;
 }
 
 /*estilo de foto perfil*/
-.fotoPerfil
-{
+.fotoPerfil{
 height: 100%;
-    width: auto;
+    width: 10em;
     background-color: #fb9200;
-    margin: 0 3em 2em 3em;
+    margin: 0 10% 10% 45%;
     border-radius: 3em;
     border: 2px solid white;
     text-align: center;
-}
+  }
 
 /*Estilo nombre usuario*/
 .nombreUsuario
