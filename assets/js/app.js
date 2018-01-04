@@ -200,7 +200,6 @@ document.getElementById('btn-google').addEventListener('click',
           });
         }else{
           console.log("Holo");
-          firebase.auth().singOut();
         }
       });
 }
