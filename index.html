@@ -38,22 +38,9 @@
 
 	<!-- Iconos -->
 	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+	<!-- Script de Firebase-->
 
-<!-- Script de Firebase-->
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBrFeijRP1EFOPP3Q1RWt-PDq04eNPy-BI",
-    authDomain: "social-network-dc688.firebaseapp.com",
-    databaseURL: "https://social-network-dc688.firebaseio.com",
-    projectId: "social-network-dc688",
-    storageBucket: "social-network-dc688.appspot.com",
-    messagingSenderId: "899865228018"
-  };
-  firebase.initializeApp(config);
-</script>
+</head>
 
 <body>
 	<!-- Splash Image -->
@@ -63,15 +50,10 @@
 </div> -->
 <!-- NAVBAR -->
 
-
-<section id="inicio" style="display: none">
+<section id="inicio" >
 	<button id="btn-google">
 Ingresa con Google</button>
 </section>
-
-
-
-
 
 <section class="first-section">
 	<nav class="navbar navbar-default" role="navigation">
@@ -1127,7 +1109,7 @@ Ingresa con Google</button>
 	</section> <!-- fin seccion -->
 </section>
 	
-
+</section>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -1139,6 +1121,18 @@ Ingresa con Google</button>
 
 	<!-- Script js-->
 	<script src="assets/js/app.js"></script>
-	
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBrFeijRP1EFOPP3Q1RWt-PDq04eNPy-BI",
+    authDomain: "social-network-dc688.firebaseapp.com",
+    databaseURL: "https://social-network-dc688.firebaseio.com",
+    projectId: "social-network-dc688",
+    storageBucket: "social-network-dc688.appspot.com",
+    messagingSenderId: "899865228018"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
