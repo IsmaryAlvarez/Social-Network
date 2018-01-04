@@ -170,9 +170,8 @@ $(".container-foods").hide();
 
 
 window.onload = function(){
-document.getElementById('btn-google').addEventListener('click',
-  function(){
-    console.log("Boton de google presionado!")
+$("#btn-google").click(function() {
+      console.log("Boton de google presionado!")
     if (!firebase.auth().currentUser){
         var provider = new firebase.auth.GoogleAuthProvider();
         provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
