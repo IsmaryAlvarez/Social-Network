@@ -126,28 +126,31 @@ border-color: white;
 .foto
 {
   background-color: #fb9200;
+      padding-top: 1em;
+      color: white;
+
 }
 
 /*estilo de foto perfil*/
 .fotoPerfil
 {
-  height: 100%;
-  width: auto;
-  background-color: #fb9200;
-  margin: 0 3em 2em 3em;
-  border-radius: 3em;
-  border: 2px solid #ffff;
-  text-align: center;
-  /*justify-content: center;*/
+height: 100%;
+    width: auto;
+    background-color: #fb9200;
+    margin: 0 3em 2em 3em;
+    border-radius: 3em;
+    border: 2px solid white;
+    text-align: center;
 }
 
 /*Estilo nombre usuario*/
 .nombreUsuario
 {
-  text-align: center;
-  font-size: 2em;
-  color: #3F2919;
-  margin-top: 1em;
+    text-align: center;
+    font-size: 3em;
+    color: #3F2919;
+    margin-top: 1em;
+    font-weight: 700;
 }
 
 .follow
@@ -160,9 +163,11 @@ border-color: white;
 /*estilos de descripcion*/
 .description
 {
-  text-align: center;
-  font-size: 1.5em;
-  color: #3F2919;
+    text-align: justify;
+    font-size: 1.5em;
+    color: #3F2919;
+    outline: 1px solid;
+    padding: 1em
 }
 
 /*Estilo icono para devolverse*/
@@ -170,7 +175,7 @@ border-color: white;
 {
   font-size: 3em;
   cursor: pointer;
-  color: #3F2919;
+  color: white;
   margin: 1em 1em;
 }
 
@@ -487,257 +492,4 @@ border-color: white;
     height: 10em;
     width: 18em;
     margin-top: 1em;
-}
-
-/*
-#viaje{
-	margin-top: 160px;
-	background-color: #FBBD00;
-	padding: 30px;
-}
-#viaje p{
-  color: white;
-  font-weight: 600;
-  margin: 10px;
-}
-#viaje img{
-	height: 15px;
-  margin-left: 10px;
-}
-#viaje h4{
-	font-size: 30px;
-}
-#good p{
-	float: left;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-#space{
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-#viaje hr{
-	width: 37%;
-	float: left;
-}
-#short{
-	width: 100%;
-}
-button{
-	clear: both;
-	color: #2F2F2F !important;
-}
-.line {
-  border-top: 3px solid white;
-
-}
-#content{
-	border: 1px solid white;
-
-}
-#join{
-  height: 380px;
-}
-#joinus{
-	background-color: rgba(0, 0, 0, 0.65);
-  height: 380px;
-  color: white;
-  padding: 25px;
-  padding-top: 60px;
-}
-.form-control{
-  background-color: #FBBD00;
-  border: 1px solid white;
-}
-
-#origen::placeholder{
-	color: white;
-}
-
-iframe {
-  outline: 1px solid white;
-  padding: 10px;
-}
-
-.second-section {
-  background-color: #FBBD00;
-  height: 50%;
-  padding: 5em 0;
-  margin-top: -62px;
-}
-.second-section p{
-	font-size: 24px;
-}
-
-.third-section {
-	background-image: url(../images/conduce.jpg);
-  height: 530px;
-  width: 100%;
-  background-position: center bottom;
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.four-section{
-	background-color: #FBBD00;
-  height: 50%;
-  padding: 5em 0;
-  margin-top: -150px;
-}
-.inp{
-  margin-top: 30px;
-}
-
-#rate button{
-	margin-top: 50px;
-}
-#rate p, h3{
-	color: white;
-}
-#rate input{
-	width: 330px;
-}
-p {
-  padding: 0;
-  margin-bottom: 1em;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
-  color: white;
-  margin-top: 1em;
-}
-
-.third-section {
-  background-color: #F2F2F2;
-}
-
-.btn-default {
-margin:10px;
-}
-
-.btn-default:hover {
-  background-color: #C53A6D;
-  color: #FFF;
-}
-
-.btns {
-  padding-top: 5em;
-}
-
-.input-group {
-  padding-bottom: 5em;
-}
-
-footer{
-    background-color: #2F2F2F;
-    padding-top: 60px;
-    height: 730px;
-}
-footer img{
-margin: 15px 0 15px 0;
-}
-footer p{
-    color: white;
-    font-weight: 500;
-}
-#footer{
-	margin: 0;
-	padding-bottom: 30px;
-	color: white;
-}
-.fa{
-	color: white;
-	padding: 5px;
-}
-#brand{
-	    padding-top: 206px;
-}
-#icon{
-padding-top: 365px;
-}
-
-@media (min-width: 576px) {
-	#movil{
-		display: none;
-	}
-}
-
-@media (max-width: 576px) {
-	.navbar-default {
-    height: 120px;
-	}
-	.first-section {
-		height: 545px;
-	}
-	#viaje {
-  	margin-top: 100px;
-  	padding: 20px;
-	}
-	.second-section {
-    margin-top: -20px;
-	}
-	#content{
-		border:none;
-		padding: none;
-	}
-	#cellphone{
-		padding: 10px;
-    outline: 1px solid white;
-	}
-	#content p{
-		font-weight: 600;
-	}
-	#phone{
-    height: 300px;
-    width: 300px;
-	}
-	.second-section {
-    background-color: #FBBD00;
-    height: 470px;
-    padding:0;
-    margin-top: -20px;
-	}
-	#joinus {
-    margin-top: -62px;
-	}
-	.four-section{
-		padding: 0 0 5em 0;
-	}
-	#rate input {
-    width: 300px;
-	}
-	iframe {
-    width: 120%;
-    height: 350px;
-  }
-  #icon{
-  	padding:0;
-  }
-  #brand {
-    padding-top: 60px;
-	}
-	#brand img{
-    width: 170px;
-	}
-	#desktop{
-		display: none;
-	}
-}
-.modal-body input{
-  margin-bottom: 10px;
-}
-.modal-footer{
-  text-align: center;
-}
-#login{
-  width: 300px;
-}
-#login_username::placeholder{
-  color: white;
-}
-
-#login_password::placeholder{
-  color: white;
 }

@@ -164,6 +164,7 @@ $("#comidaJaponesa").hide();
 $("#comidaMexicana").hide();
 $("#comidaItaliana").hide();
 $("#comidaVenezolana").hide();
+$(".container-foods").hide();
 });
 
 
