@@ -1,0 +1,32 @@
+[debug] [2018-01-03T15:30:14.795Z] ----------------------------------------------------------------------
+[debug] [2018-01-03T15:30:14.798Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-01-03T15:30:14.799Z] CLI Version:   3.16.0
+[debug] [2018-01-03T15:30:14.799Z] Platform:      linux
+[debug] [2018-01-03T15:30:14.799Z] Node Version:  v6.11.5
+[debug] [2018-01-03T15:30:14.799Z] Time:          Wed Jan 03 2018 12:30:14 GMT-0300 (-03)
+[debug] [2018-01-03T15:30:14.799Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-03T15:30:14.810Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-03T15:30:14.810Z] > authorizing via signed-in user
+[debug] [2018-01-03T15:30:14.813Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/social-network-dc688  
+  
+ Wed Jan 03 2018 12:30:14 GMT-0300 (-03)
+[debug] [2018-01-03T15:30:15.786Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-03T15:30:15.787Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/social-network-dc688/tokens  
+  
+ Wed Jan 03 2018 12:30:15 GMT-0300 (-03)
+[debug] [2018-01-03T15:30:16.684Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoria/Desktop/Social Network'...
+[info] 
+[debug] [2018-01-03T15:30:16.691Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/social-network-dc688  
+  
+ Wed Jan 03 2018 12:30:16 GMT-0300 (-03)
+[debug] [2018-01-03T15:30:18.028Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-03T15:30:18.029Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/899865228018/clients/_:getWebAppConfig  
+  
+ Wed Jan 03 2018 12:30:18 GMT-0300 (-03)
+[debug] [2018-01-03T15:30:19.368Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

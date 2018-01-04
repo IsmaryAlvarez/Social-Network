@@ -43,8 +43,9 @@
 
 
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
-  float: left;
+border-color: white;
+    float: left;
+    margin-top: 1.5em;
 }
 .first-section {
   width: 100%;
@@ -63,8 +64,9 @@
   height: 15%;
 }
 .navbar-default .navbar-nav>li>a {
-	color: #3F2919 !important;
+	color: white !important;
   margin-left: 20px;
+    margin-top: 1em;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: #e7e7e7;
@@ -85,7 +87,7 @@
     font-weight: 600;
     margin: 0;
     padding-bottom: 1em;
-    color: #3F2919;
+    color: white;
 }
 
 
@@ -331,7 +333,9 @@
 
 /*circulos de colores*/
 .circulos{
-  display: inline-block;
+      display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ch-grid {
   margin: 20px 0 0 0;
@@ -378,14 +382,14 @@
 }
 
 .ch-img-2 { 
-  background-image: url(../images/restaurants/venezolana5.jpg);
+  background-image: url(../images/restaurants/mexicana4.png);
   background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 }
 
 .ch-img-3 { 
-  background-image: url(../images/restaurants/china1.jpg);
+  background-image: url(../images/restaurants/japonesa1.jpg);
   width: 100%;
   background-repeat: no-repeat;
     background-position: bottom;
@@ -399,7 +403,7 @@
 }
 
 .ch-img-5{ 
-  background-image: url(../images/restaurants/japonesa1.jpg);
+  background-image: url(../images/restaurants/venezolana5.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -479,6 +483,11 @@
 }
 
 
+.thumbnail img{
+    height: 10em;
+    width: 18em;
+    margin-top: 1em;
+}
 
 /*
 #viaje{

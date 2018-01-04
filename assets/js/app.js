@@ -1,8 +1,3 @@
-// La funcionalidad de tu proyecto
-/*$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-*/
 /**
  * Función centrado de imagen en vista splash
  */
@@ -38,9 +33,13 @@ $('#circle').circleProgress({
  fill: {gradient: [['#ffffff', .5], ['#f7f2f5', .5]], gradientAngle: Math.PI / 4}
 
 }).on('circle-animation-progress', function(event, progress, stepValue) {
-  $(this).find('st$(".circulos").();rong').text(stepValue.toFixed(2).substr(1)); 
-
+  $(this).find('strong').text(stepValue.toFixed(2).substr(1));
+  
 });
+
+/**
+ * Función circulos con imágenes
+ */
 
 $(".circulos").hide();
 $("#comidaJaponesa").hide();
@@ -49,21 +48,24 @@ $("#comidaItaliana").hide();
 $("#comidaVenezolana").hide();
 
 $(".restaurant").click(function(){ 
+$(".news").hide();
+$("#comidaJaponesa").hide();
+$("#comidaMexicana").hide();
+$("#comidaItaliana").hide();
+$("#comidaVenezolana").hide();
 $(".circulos").show();
-
-
 });
 
-$(".mostrar-1").click(function(){ 
+
+$(".ch-img-2").click(function(){ 
 $("#comidaMexicana").show();
 $("#comidaJaponesa").hide();
 $("#comidaItaliana").hide();
 $("#comidaVenezolana").hide();
 $(".circulos").hide();
-
 });
 
-$(".mostrar-2").click(function(){ 
+$(".ch-img-3").click(function(){ 
 $("#comidaJaponesa").show();
 $("#comidaMexicana").hide();
 $("#comidaItaliana").hide();
@@ -72,7 +74,7 @@ $(".circulos").hide();
 });
 
 
-$(".mostrar-3").click(function(){ 
+$(".ch-img-4").click(function(){ 
 $("#comidaItaliana").show();
 $("#comidaJaponesa").hide();
 $("#comidaMexicana").hide();
@@ -80,7 +82,7 @@ $("#comidaVenezolana").hide();
 $(".circulos").hide();
 });
 
-$(".mostrar-4").click(function(){ 
+$(".ch-img-5").click(function(){ 
 $("#comidaVenezolana").show();
 $("#comidaJaponesa").hide();
 $("#comidaMexicana").hide();
@@ -157,10 +159,49 @@ $(".perfil").click(function(){
   $(".containerFood").hide();
   $(".news").hide();
   $(".verMensaje").hide();
+  $(".circulos").hide();
+$("#comidaJaponesa").hide();
+$("#comidaMexicana").hide();
+$("#comidaItaliana").hide();
+$("#comidaVenezolana").hide();
+});
+
+
+
+/*
+
+
+document.getElementById('btn-google').addEventListener('click',function(){
+if (!firebase.auth().currentUser){
+    var provider = new firebase.auth.GoogleAuthProvider();
+    provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    
+firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  console.log(user);
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+      if (errorCode === 'auth/account-exists-with-different-credential'){
+        alert ('Es el mismo usuario');
+      }
+    });
+  }else{
+    firebase.auth().singOut();
+  }
 });
 
 
 
 
 
- 
+*/
