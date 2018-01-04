@@ -88,87 +88,86 @@
 	</nav>
 </section>
 
-
-
-
-
-
-
 <!-- seccion Noticias -->
 <section class="news">
+	
+	<!-- div para amigos y mis posteos-->
+	<div class="row">
 
-	<!-- <div class="container theNews"> -->
-		<!-- fila para noticias -->
-		<div class="row naranja">
-			<div class="col">
-				<p class="titleNew">Noticias</p>
-			</div> <!-- fin col -->
-		</div> <!-- fin fila -->
+		<!-- colum amigos -->
+		<div class="col-lg-4 friends">
 
-		<!-- fila para imagen, comentarios y boton -->
-		<div class="row">
-			<!-- col para imagen -->
-			<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-6 col-12 col-xs-12">
+			<div class="titulofriends">
+				<p class="tituloAmigos">Amigos</p>
+			</div>
 
-				<!-- contenedor de comentarios -->
-				<div class="comments">
-					
-					<!-- <div class="comment1"> -->
+			<div class="amigooo">
+				<img class="amigo" src="assets/images/amigos/anamaria.jpg" alt="">
+				<p class="nombreAmigo">pepito los palotes</p>
+			</div>
 
-						<div class="row">
+			<div class="amigooo">
+				<img class="amigo" src="assets/images/amigos/jose.jpg" alt="">
+				<p class="nombreAmigo" >pepita las palatas</p>
+			</div>
 
-							<div class="col-lg-2">
-								<!-- imagen usuario -->
-								<img class="fotoPost" src="assets/images/imagenPerfil.jpg" alt="foto">
-								
-								<!-- imput -->
-								<!-- <div class="input">
-									<input id="writePost" type="text" class="form-control post" placeholder="Escribe un comentario" aria-describedby="titulo">
-								</div> --> <!-- fin input -->
-								
-								<!-- textarea para mensaje -->
-								<textarea name="comment" id="comment" cols="50" rows="5" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
+			<div class="amigooo">
+				<img class="amigo" class="amigo" src="assets/images/amigos/gian.jpg" alt="">
+				<p class="nombreAmigo">pepita las palatas</p>
+			</div>
 
-							</div> <!-- fin col -->
-						</div> <!-- fin fila -->
+			<div class="amigooo">
+				<img class="amigo" src="assets/images/amigos/katy.jpg" alt="">
+				<p class="nombreAmigo" >pepita las palatas</p>
+			</div>
 
+			<div class="amigooo">
+				<img class="amigo" class="amigo" src="assets/images/amigos/mariana.jpg" alt="">
+				<p class="nombreAmigo">pepita las palatas</p>
+			</div>
 
-					<!-- </div> --> <!-- fin comment1 -->
-
-	          <div class="comment2">
-	          	<!-- boton agregar comentario-->
-	          	<div class="btn">
-	          		<p class="btn-comentario" onclick="add()">Comentar</p>
-	          	</div>
-	          	<!-- icono camara -->
-	          	<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
-	          </div> <!-- fin comment2 -->
+		</div> <!-- fin columna amigos -->
 
 
+		<!-- COLUMNA PARA MIS POSTEOS Y NOTICIAS-->
+		<div class="col-lg-7 ">
 
-				</div> <!-- fin contenedor comentarios -->
+			<div class="row">
+				<div class="col">
+					<p class="titleNew">Noticias</p>
+				</div> <!-- fin col -->
+			</div> <!-- fin fila -->
+			
+			<div class="comments">
+				
+				<!-- imagen usuario -->
+				<img class="fotoPost" src="assets/images/imagenPerfil.jpg" alt="foto">
+											
+				<!-- textarea para mensaje -->
+				<textarea name="comment" id="comment" cols="50" rows="5" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
+				
+				<!-- boton agregar comentario-->
+       	<div class="btn">
+       		<p id="btn-comentario">Comentar</p>
+       	</div>
+       	<!-- icono camara -->
+       	<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
 
-			</div> <!-- fin col -->
-		</div> <!-- fin row -->
+			</div>
+
+			<!-- contenedor donde iran los mensajes posteados -->
+			<div class="verMensaje">
+				<div id="cont"></div>
+			</div>
+
+		</div> <!-- fin columna para mis posteos y noticias -->
+	</div> <!-- fin row -->
 
 	<!-- </div> --> <!-- fin contenedor -->
 </section> <!-- fin seccion noticias -->
 
 
-
-
-<!-- seccion donde se publica el mensaje -->
-<section class="verMensaje">
-
-	<div id="cont"></div>
-
-</section>
-
-
-
-
-
-  <!-- Modal para subir foto-->
+  <!-- MODAL PARA SUBIR FOTO-->
   <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   	<!-- tamano del contenedor, por defecto 600px -->
 	<div class="modal-dialog" role="document">
@@ -197,23 +196,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		</div>
@@ -260,15 +242,9 @@
 </ul>
 	</section>
 
-	<!-- container con las imagenes -->
-	<div class="container-foods">
+	<!-- container con las imagenes de comida-->
 
-
-	<!-- container con las imagenes -->
 	<div class="containerFood">
-
-		
-		
 		<div class="tab-content dentro">
 		
 			<!-- contenedor de las imagenes comida japonesa -->

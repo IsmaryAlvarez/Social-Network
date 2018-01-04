@@ -120,7 +120,16 @@
   color: #3F2919;
 }
 
-/*foto*/
+/*
+ * SECCION DEL PERFIL DE LA PERSONA
+*/
+
+/*estilo caja description*/
+.cajaDescription
+{
+  padding: 1em 4em;
+}
+
 .foto
 {
   background-color: #fb9200;
@@ -148,6 +157,7 @@
   margin-top: 1em;
 }
 
+/*estilo de los que te siguen y sigues*/
 .follow
 {
   text-align: center;
@@ -155,7 +165,7 @@
   color: #3F2919;
 }
 
-/*estilos de descripcion*/
+/*estilos de descripcion de la persona*/
 .description
 {
   text-align: center;
@@ -180,46 +190,43 @@
   margin: 1em 1em;
 }
 
-/*estilo caja description*/
-.cajaDescription
+/*
+ * SECCION DE AMIGOS Y NOTICIAS
+*/
+/* AMIGOS*/
+.friends
 {
-  padding: 1em 4em;
+  border: 1px solid red;
 }
 
-/*estilo caja comentarios*/
+.amigo
+{
+  height: 4em;
+  border-radius: 5em;
+}
+
+.tituloAmigos
+{
+  font-size: 2em;
+  text-align: center;
+}
+
+
+/*NOTICIAS*/
+
+/*estilo caja comentarios, donde se escribe el post*/
 .comments
 {
   border: 1px solid #000;
   height: 10em;
-  width: 40em;
-  margin: 3em 0;
-  padding: 2em 1em;
+  width: 95%;
+/*  margin: 3em 0;
+  padding: 2em 1em;*/
+  text-align: center;
   /*flexbox*/
  /* display: flex;
   flex-wrap: wrap;*/
 }
-
-/**/
-/*.naranja
-{
-  background-color: #fb9200;
-}*/
-
-/**/
-.comment1
-{
-  /*flexbox*/
-  display: flex;
-  flex-direction: row;
-}
-
-.comment2
-{
-  /*flexbox*/
-  /*display: flex;
-  flex-direction: column;*/
-}
-
 
 /*estilo titulo*/
 .titleNew
@@ -231,8 +238,7 @@
 /*estilo foto del posteo*/
 .fotoPost
 {
-  height: 6em;
-  width: 6em;
+  height: 4em;
   border-radius: 5em;
 }
 
@@ -245,11 +251,11 @@
 /*Donde va el texto*/
 #cont 
 {
-  width: 51em;
+  width: 100%;
   margin: 0 auto;
   color: #4E4D53;
   text-align: left;
-  /*border: 1px solid purple;*/ /*ayuda visual*/
+  margin-top: 2em;
 }
 
 /*cuadro de texto*/
@@ -261,8 +267,6 @@
   border-radius: 0.5em;
   outline: 0.1em solid #E5E3F2;
   background-color: #FFF;
-  /*border: 1px solid orange;*/ /*ayuda visual*/
-
 }
 
 
@@ -278,6 +282,23 @@
 }
 
 .btn-comentario:hover
+{
+  color: #fb9200;
+  background-color: #3F2919;
+}
+
+/*estilo boton comentario*/
+#btn-comentario
+{
+  height: 2.5em;
+  width: 6em;
+  padding: 0.5em;
+  background-color: #fb9200;
+  text-align: center;
+  border-radius: 2em;
+}
+
+#btn-comentario:hover
 {
   color: #fb9200;
   background-color: #3F2919;
@@ -306,6 +327,33 @@
   color: #fb9200;
   background-color: #3F2919;
 }
+
+/*estilos iconos corazon y basura*/
+.heart, .trash 
+{
+  margin:1em;
+  float: right;
+  cursor: pointer;
+  height: 1em;
+}
+
+.trash:hover 
+{
+  color: #1DA1F2;
+  cursor: pointer;
+}
+
+/*color corazon al hacer click*/
+.red {
+  color: #FC1E26;
+  cursor: pointer;
+}
+
+.nombre
+{
+  color: #1DA1F2;
+}
+
 
 
 /*.icon-camera:before {

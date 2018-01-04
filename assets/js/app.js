@@ -89,61 +89,92 @@ $(".circulos").hide();
 });
 
 // ---------------------------------------------
+//              SECCION NOTICIAS        
 // ---------------------------------------------
 
+// escondiendo otras pantallas
 $(".containerFood").hide();
+$(".pantallaPerfil").hide();
 
-//funcion para agregar comentario
-function add()
-{
-  //obtener los comentarios
+
+//funcion para agregar comentario, borrarlos y darle favorito
+var boton = document.getElementById("btn-comentario");
+
+boton.addEventListener("click",function(){
+
+  //tomar texto del textarea
   var comments = document.getElementById("comment").value;
-  
-  //validar que el textarea tenga texto, si no tiene se desactiva boton comentario
-  if (comments.length == 0 || comments == null || comments == "")
+  // linpiar textarea
+  document.getElementById("comment").value = "";
+  //contenedor que esta determinado en el html
+  var cont = document.getElementById("cont");
+  //crear el div que contendra cada comentario posteado
+  var newComments = document.createElement('div');
+
+  //validar que textarea tenga un msje
+   if (comments.length == 0 || comments == null || comments == "")
   {
-    //desactivar boton del comentario
-    var boton = getElementById("btn");
+    // si no hay texto se deshabilita el boton
+    var boton = getElementById("btn-comentario");
     boton.disable = true;
-    // document.getElementById("btn").disabled = true;
   }
-  else
-  {
-    //limpiar textarea
-    document.getElementById("comment").value = "";
-    //crear el contenedor de los comentarios
-    var newComment = document.createElement("div");
-    //agregar id del div de la seccion donde se publica los comentarios
-    var contenido = document.getElementById("cont");
-    //crear parrafo
-    var text = document.createElement("p");
-    //crear nodo de texto de textarea
-      var nodoTexto = document.createTextNode(comments);
 
-      //establecer hora en el comentario
-      //crear un contenedor span para la hora
-      var hour = document.createElement("span");
-      var newHour = new Date();
-      var sHour ="added at  " + newHour.getHours()+":" + newHour.getMinutes();
-      hour.textContent = sHour;
+  //establecer hora en el comentario
+  //crear un contenedor span para la hora
+  var hour = document.createElement("span");
+  var newHour = new Date();
+  var sHour ="Comentado a las  " + newHour.getHours()+":" + newHour.getMinutes();
+  hour.textContent = sHour;
 
-      //se anaden los hijos
-      text.appendChild(nodoTexto);
-      newComment.appendChild(text);
-      newComment.appendChild(hour);
-      cont.appendChild(newComment);
-  }
-}
+  //crear el nombre del perfil
+  // var nombre = document.createElement("p");
+  // nombre.classList.add("nombre");
+
+  //crear icono de corazon
+  var heart = document.createElement("i");
+  heart.classList.add("glyphicon", "glyphicon-heart", "heart");
+
+  //crear icono de basura
+  var trash = document.createElement("i");
+  trash.classList.add("glyphicon", "glyphicon-trash", "trash");
+
+  //nodos de texto para el textarea
+  var textNewComment = document.createTextNode(comments);
+
+  var contenedorElemento = document.createElement("p");
+  contenedorElemento.appendChild(textNewComment);
+
+  //newComments.appendChild(nombre);
+  newComments.appendChild(trash);
+  newComments.appendChild(heart);
+  newComments.appendChild(hour);
+  newComments.appendChild(contenedorElemento);
+
+  cont.appendChild(newComments);
+
+  //evento colorea el corazon al hacer ckick
+  heart.addEventListener("click", function(){
+    heart.classList.toggle("red");
+  })
 
 
+  //evento elimina comnetario
+  trash.addEventListener("click", function(){
+    cont.removeChild(newComments);
+  })
+
+});
+
+// mostrar modal con fade
+$("#fade").modal({
+  fadeDuration: 1000,
+  fadeDelay: 0.50
+});
 
 
-
-// ---------------------------------------------
-// ---------------------------------------------
-
-
-
+// --------------------------------------------------
+//                SECCION PERFIL
+// --------------------------------------------------
 
 // pantalla del perfil escondida
 $(".pantallaPerfil").hide();
