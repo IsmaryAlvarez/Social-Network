@@ -42,6 +42,63 @@ $('#circle').circleProgress({
   
 });
 
+// ---------------------------------------------
+// ---------------------------------------------
+
+$(".containerFood").hide();
+
+//funcion para agregar comentario
+function add()
+{
+  //obtener los comentarios
+  var comments = document.getElementById("comment").value;
+  
+  //validar que el textarea tenga texto, si no tiene se desactiva boton comentario
+  if (comments.length == 0 || comments == null || comments == "")
+  {
+    //desactivar boton del comentario
+    var boton = getElementById("btn");
+    boton.disable = true;
+    // document.getElementById("btn").disabled = true;
+  }
+  else
+  {
+    //limpiar textarea
+    document.getElementById("comment").value = "";
+    //crear el contenedor de los comentarios
+    var newComment = document.createElement("div");
+    //agregar id del div de la seccion donde se publica los comentarios
+    var contenido = document.getElementById("cont");
+    //crear parrafo
+    var text = document.createElement("p");
+    //crear nodo de texto de textarea
+      var nodoTexto = document.createTextNode(comments);
+
+      //establecer hora en el comentario
+      //crear un contenedor span para la hora
+      var hour = document.createElement("span");
+      var newHour = new Date();
+      var sHour ="added at  " + newHour.getHours()+":" + newHour.getMinutes();
+      hour.textContent = sHour;
+
+      //se anaden los hijos
+      text.appendChild(nodoTexto);
+      newComment.appendChild(text);
+      newComment.appendChild(hour);
+      cont.appendChild(newComment);
+  }
+}
+
+
+
+
+
+// ---------------------------------------------
+// ---------------------------------------------
+
+
+
+
 // pantalla del perfil escondida
 $(".pantallaPerfil").hide();
 
@@ -52,7 +109,12 @@ $(".perfil").click(function(){
   $(".pantallaPerfil").show();
   $(".first-section").hide();
   $(".containerFood").hide();
-
-
+  $(".news").hide();
+  $(".verMensaje").hide();
 });
 
+
+
+
+
+ 
