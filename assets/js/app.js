@@ -38,8 +38,54 @@ $('#circle').circleProgress({
  fill: {gradient: [['#ffffff', .5], ['#f7f2f5', .5]], gradientAngle: Math.PI / 4}
 
 }).on('circle-animation-progress', function(event, progress, stepValue) {
-  $(this).find('strong').text(stepValue.toFixed(2).substr(1));
-  
+  $(this).find('st$(".circulos").();rong').text(stepValue.toFixed(2).substr(1)); 
+
+});
+
+$(".circulos").hide();
+$("#comidaJaponesa").hide();
+$("#comidaMexicana").hide();
+$("#comidaItaliana").hide();
+$("#comidaVenezolana").hide();
+
+$(".restaurant").click(function(){ 
+$(".circulos").show();
+
+
+});
+
+$(".mostrar-1").click(function(){ 
+$("#comidaMexicana").show();
+$("#comidaJaponesa").hide();
+$("#comidaItaliana").hide();
+$("#comidaVenezolana").hide();
+$(".circulos").hide();
+
+});
+
+$(".mostrar-2").click(function(){ 
+$("#comidaJaponesa").show();
+$("#comidaMexicana").hide();
+$("#comidaItaliana").hide();
+$("#comidaVenezolana").hide();
+$(".circulos").hide();
+});
+
+
+$(".mostrar-3").click(function(){ 
+$("#comidaItaliana").show();
+$("#comidaJaponesa").hide();
+$("#comidaMexicana").hide();
+$("#comidaVenezolana").hide();
+$(".circulos").hide();
+});
+
+$(".mostrar-4").click(function(){ 
+$("#comidaVenezolana").show();
+$("#comidaJaponesa").hide();
+$("#comidaMexicana").hide();
+$("#comidaItaliana").hide();
+$(".circulos").hide();
 });
 
 // ---------------------------------------------
