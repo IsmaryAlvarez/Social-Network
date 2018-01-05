@@ -88,49 +88,114 @@
 	</nav>
 </section>
 
-<!-- seccion Noticias -->
+<!-- seccion Noticias y mas-->
 <section class="news">
 	
 	<!-- div para amigos y mis posteos-->
 	<div class="row">
 
 		<!-- colum amigos -->
-		<div class="col-lg-4 friends">
+		<div class="col-lg-3 friends">
 
 			<div class="titulofriends">
 				<p class="tituloAmigos">Amigos</p>
 			</div>
-
+			
+			<!-- amigo 1 -->
 			<div class="amigooo">
-				<img class="amigo" src="assets/images/amigos/anamaria.jpg" alt="">
-				<p class="nombreAmigo">pepito los palotes</p>
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" src="assets/images/amigos/anamaria.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Rosa Perez</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+			
+			<!-- amigo 2 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" src="assets/images/amigos/jose.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Lolo Lala</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+			
+			<!-- amigo 3 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" class="amigo" src="assets/images/amigos/gian.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Marcela Q.</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+			
+			<!-- amigo 4 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" src="assets/images/amigos/katy.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Papas Lover</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+	
+			<!-- amigo 5 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" class="amigo" src="assets/images/amigos/mariana.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Olimpia</p>
+					</div>
+				</div> <!-- fin fila -->
 			</div>
 
+			<!-- amigo 6 -->
 			<div class="amigooo">
-				<img class="amigo" src="assets/images/amigos/jose.jpg" alt="">
-				<p class="nombreAmigo" >pepita las palatas</p>
-			</div>
-
-			<div class="amigooo">
-				<img class="amigo" class="amigo" src="assets/images/amigos/gian.jpg" alt="">
-				<p class="nombreAmigo">pepita las palatas</p>
-			</div>
-
-			<div class="amigooo">
-				<img class="amigo" src="assets/images/amigos/katy.jpg" alt="">
-				<p class="nombreAmigo" >pepita las palatas</p>
-			</div>
-
-			<div class="amigooo">
-				<img class="amigo" class="amigo" src="assets/images/amigos/mariana.jpg" alt="">
-				<p class="nombreAmigo">pepita las palatas</p>
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" class="amigo" src="assets/images/amigos/aldo.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Homer S</p>
+					</div>
+				</div> <!-- fin fila -->
 			</div>
 
 		</div> <!-- fin columna amigos -->
 
 
-		<!-- COLUMNA PARA MIS POSTEOS Y NOTICIAS-->
-		<div class="col-lg-7 ">
+		<!-- COLUMNA PARA MIS POSTEOS, NOTICIAS Y LO MAS VISTO-->
+		<div class="col-lg-6 ">
 
 			<div class="row">
 				<div class="col">
@@ -139,29 +204,96 @@
 			</div> <!-- fin fila -->
 			
 			<div class="comments">
-				
+
 				<!-- imagen usuario -->
 				<img class="fotoPost" src="assets/images/imagenPerfil.jpg" alt="foto">
-											
-				<!-- textarea para mensaje -->
-				<textarea name="comment" id="comment" cols="50" rows="5" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
-				
-				<!-- boton agregar comentario-->
-       	<div class="btn">
-       		<p id="btn-comentario">Comentar</p>
-       	</div>
-       	<!-- icono camara -->
-       	<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
 
-			</div>
+				<!-- textarea para mensaje -->
+				<textarea name="comment" id="comment" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
+
+				<!-- boton agregar comentario-->
+				<div class="btn">
+					<p id="btn-comentario">Post!</p>
+				</div>
+				<!-- icono camara -->
+				<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
+
+			</div><!-- fin comments -->
 
 			<!-- contenedor donde iran los mensajes posteados -->
 			<div class="verMensaje">
 				<div id="cont"></div>
 			</div>
 
+			<!-- posteo de amigos -->
+			<div class="friendPost">
+				<p class="posteoLolo"><b>Posteado por Lolo Lala</b></p>
+				<!-- fila para imagen y comentario -->
+				<div class="row">
+					<div class="col-lg-3">
+						<img class="loveImg" src="assets/images/amar.jpg" alt="love">
+					</div><!-- fin col -->
+					<div class="col-lg-8">
+						<p>No puedo dejar de amar la comida chatarra</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam architecto veniam, possimus repellat commodi at vero</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- posteo de amigos -->
+			<div class="friendPost">
+				<p class="posteoLolo"><b>Posteado por Marcela Q.</b></p>
+				<!-- fila para imagen y comentario -->
+				<div class="row">
+					<div class="col-lg-3">
+						<img class="loveImg" src="assets/images/naranja.jpg" alt="love">
+					</div><!-- fin col -->
+					<div class="col-lg-8">
+						<p><a href="#">3 preparaciones con naranjas</a></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam architecto veniam, possimus repellat commodi at vero</p>
+					</div>
+				</div><!-- fin row -->
+			</div> <!-- fin posteo amigo -->
+
 		</div> <!-- fin columna para mis posteos y noticias -->
 	</div> <!-- fin row -->
+
+		<!-- columna lo + leido -->
+		<div class="col-lg-3 masLeido">
+
+			<div class="tituloLeido">
+				<p class="tituloLoMas">Lo + Visto</p>
+			</div>
+			
+			<!-- thumbnail con temas mas vistos -->
+			<!-- thumbnail 1 -->
+		  <div class="thumbnail">
+		    <a href="#"><img class="pizza" src="assets/images/mejorPizza.jpg" alt="pizza"></a>
+		    <div class="caption">
+		      <h4>La mejor pizza del mundo!!</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		  </div>
+			
+			<!-- thumbnail 2 -->
+		  <div class="thumbnail">
+		    <a href="#"><img class="porn" src="assets/images/comidaPorno.jpg" alt="pizza"></a>
+		    <div class="caption">
+		      <h4>La comida tambien puede ser porno</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		  </div>
+
+		  <!-- thumbnail 3 -->
+		  <div class="thumbnail">
+		    <a href="#"><img class="everywhere" src="assets/images/everywhere.jpg" alt="pizza"></a>
+		    <div class="caption">
+		      <h4>Chatarra chatarra everywhere</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		  </div>
+
+		</div> <!-- fin col -->
 
 	<!-- </div> --> <!-- fin contenedor -->
 </section> <!-- fin seccion noticias -->

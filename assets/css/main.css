@@ -5,10 +5,10 @@
 */
 * {
   font-family: 'Lato', sans-serif;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-
-
 
 #overlay{
   display: none;
@@ -36,10 +36,6 @@
   justify-content:center;
   align-items: center;
 }
-
-
-
-
 
 
 .navbar-default .navbar-toggle {
@@ -120,6 +116,7 @@
   color: #3F2919;
 }
 
+
 /*
  * SECCION DEL PERFIL DE LA PERSONA
 */
@@ -156,7 +153,7 @@
   color: #3F2919;
   margin-top: 1em;
 }
-
+news
 /*estilo de los que te siguen y sigues*/
 .follow
 {
@@ -193,16 +190,42 @@
 /*
  * SECCION DE AMIGOS Y NOTICIAS
 */
-/* AMIGOS*/
-.friends
+/*general*/
+.news
 {
-  border: 1px solid red;
+ /* display: flex;
+  flex-wrap: nowrap;*/
 }
 
+/*estilo fotos de amigos*/
 .amigo
 {
   height: 4em;
   border-radius: 5em;
+}
+
+/*Estilo caja de los amigo*/
+.amigooo
+{
+  padding: 1em;
+/*  border-top: 0.5px solid #fb9200;
+  border-right: 0.5px solid #fb9200;*/
+  border-radius: 5px; 
+}
+
+.amigooo:hover
+{
+  padding: 1em;
+  /*border-top: 0.5px solid #fb9200;
+  border-right: 0.5px solid #fb9200;*/
+  background-color: rgba(211, 144, 87, 0.4); 
+}
+
+/*Estilo  nombre amigo*/
+.nombreAmigo
+{
+  font-size: 1.5em;
+  margin: 0.8em 0 0 2em;
 }
 
 .tituloAmigos
@@ -217,15 +240,22 @@
 /*estilo caja comentarios, donde se escribe el post*/
 .comments
 {
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
+  border-radius: 2em;
   height: 10em;
   width: 95%;
-/*  margin: 3em 0;
-  padding: 2em 1em;*/
   text-align: center;
-  /*flexbox*/
- /* display: flex;
-  flex-wrap: wrap;*/
+  background-color: rgba(196, 200, 201, 0.3); 
+}
+
+/*estilo textarea */
+.comments textarea
+{
+  min-height: 60px;
+  max-height: 100px;
+  min-width: 60%;
+  max-width: 100%;
+  margin: 1em 0 1em 1em;
 }
 
 /*estilo titulo*/
@@ -240,6 +270,7 @@
 {
   height: 4em;
   border-radius: 5em;
+  margin-bottom: 4em;
 }
 
 /*estilo input del post*/
@@ -248,33 +279,33 @@
   width: 4em;
 }
 
-/*Donde va el texto*/
+/*Estilo contenedor donde va el comentario creado*/
 #cont 
 {
-  width: 100%;
-  margin: 0 auto;
-  color: #4E4D53;
+  width: 95%;
+/*  margin: 0 auto;*/
+  color: #000;
   text-align: left;
   margin-top: 2em;
 }
 
-/*cuadro de texto*/
+/*contenedor de la caja*/
 #cont div 
 {
   display: block;
+  padding-left: 1em;
   padding: 1em 0.5em;
   margin-bottom: 2em;
-  border-radius: 0.5em;
-  outline: 0.1em solid #E5E3F2;
-  background-color: #FFF;
+  border-radius: 2em;
+  /*outline: 0.1em solid #000;*/
+  background-color: rgba(196, 200, 201, 0.3); 
 }
-
 
 /*estilo boton comentario*/
 .btn-comentario
 {
   height: 2.5em;
-  width: 6em;
+  width: 5.5em;
   padding: 0.5em;
   background-color: #fb9200;
   text-align: center;
@@ -311,6 +342,25 @@
   width: 4em;
 }
 
+/*Estilo de comentarios de amigos*/
+.friendPost
+{
+/*  border: 1px solid #000;*/
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 95%;
+  border-radius: 1em;
+  background-color: rgba(196, 200, 201, 0.3); 
+}
+
+/*Estilo foto en el comentario*/
+.loveImg
+{
+  height: 6em;
+  border-radius: 1em;
+  margin-right: 1em;
+}
+
 /*estilo boton subir foto en modal*/
 .btn-subirFoto
 {
@@ -345,20 +395,15 @@
 
 /*color corazon al hacer click*/
 .red {
-  color: #FC1E26;
+  color: red;
   cursor: pointer;
 }
 
-.nombre
+/*LO MAS VISTO*/
+.masLeido
 {
-  color: #1DA1F2;
+  border: 1px solid blue;
 }
-
-
-
-/*.icon-camera:before {
-  content: "\e929";
-}*/
 
 
 
@@ -371,16 +416,16 @@
 /*-------------------------------------------*/
 
 .caption img{
-    border-radius: 50%;
-    height: 4em;
-    width: 4em;
-
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
 }
 
 /*circulos de colores*/
 .circulos{
   display: inline-block;
 }
+
 .ch-grid {
   margin: 20px 0 0 0;
   padding: 0;

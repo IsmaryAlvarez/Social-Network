@@ -88,6 +88,7 @@ $("#comidaItaliana").hide();
 $(".circulos").hide();
 });
 
+
 // ---------------------------------------------
 //              SECCION NOTICIAS        
 // ---------------------------------------------
@@ -123,7 +124,7 @@ boton.addEventListener("click",function(){
   //crear un contenedor span para la hora
   var hour = document.createElement("span");
   var newHour = new Date();
-  var sHour ="Comentado a las  " + newHour.getHours()+":" + newHour.getMinutes();
+  var sHour = "Comentado por ti a las " + newHour.getHours()+":" + newHour.getMinutes();
   hour.textContent = sHour;
 
   //crear el nombre del perfil
@@ -193,5 +194,5 @@ $(".perfil").click(function(){
 
 
 
-
+// hidden-md hidden-sm hidden-xs
  
