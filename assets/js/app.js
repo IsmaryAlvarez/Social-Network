@@ -2,7 +2,7 @@
  * Función centrado de imagen en vista splash
  */
 
-$.fn.center = function () {
+ $.fn.center = function () {
   this.css("position","absolute");
   this.css("top", Math.max(0, (
     ($(window).height() - $(this).outerHeight()) / 2) + 
@@ -18,21 +18,21 @@ $.fn.center = function () {
 /**
  * cargado de función vista splash
  */
-$("#overlay").show();
-$("#overlay-content").show().center();
+ $("#overlay").show();
+ $("#overlay-content").show().center();
 
-setTimeout(function(){    
+ setTimeout(function(){    
   $("#overlay").fadeOut();
 }, 2000);
 
 /**
  * Función circulo vista splash
  */
-$('#circle').circleProgress({
- value: 1,
- fill: {gradient: [['#ffffff', .5], ['#f7f2f5', .5]], gradientAngle: Math.PI / 4}
+ $('#circle').circleProgress({
+   value: 1,
+   fill: {gradient: [['#ffffff', .5], ['#f7f2f5', .5]], gradientAngle: Math.PI / 4}
 
-}).on('circle-animation-progress', function(event, progress, stepValue) {
+ }).on('circle-animation-progress', function(event, progress, stepValue) {
   $(this).find('strong').text(stepValue.toFixed(2).substr(1));
   
 });
@@ -41,55 +41,54 @@ $('#circle').circleProgress({
  * Función circulos con imágenes
  */
 
-$(".circulos").hide();
-$("#comidaJaponesa").hide();
-$("#comidaMexicana").hide();
-$("#comidaItaliana").hide();
-$("#comidaVenezolana").hide();
+ $(".circulos").hide();
+ $("#comidaJaponesa").hide();
+ $("#comidaMexicana").hide();
+ $("#comidaItaliana").hide();
+ $("#comidaVenezolana").hide();
 
-$(".restaurant").click(function(){ 
-$(".news").hide();
-$("#comidaJaponesa").hide();
-$("#comidaMexicana").hide();
-$("#comidaItaliana").hide();
-$("#comidaVenezolana").hide();
-$(".circulos").show();
+ $(".restaurant").click(function(){ 
+  $(".news").hide();
+  $("#comidaJaponesa").hide();
+  $("#comidaMexicana").hide();
+  $("#comidaItaliana").hide();
+  $("#comidaVenezolana").hide();
+  $(".circulos").show();
 });
 
 
-$(".ch-img-2").click(function(){ 
-$("#comidaMexicana").show();
-$("#comidaJaponesa").hide();
-$("#comidaItaliana").hide();
-$("#comidaVenezolana").hide();
-$(".circulos").hide();
+ $(".ch-img-2").click(function(){ 
+  $("#comidaMexicana").show();
+  $("#comidaJaponesa").hide();
+  $("#comidaItaliana").hide();
+  $("#comidaVenezolana").hide();
+  $(".circulos").hide();
 });
 
-$(".ch-img-3").click(function(){ 
-$("#comidaJaponesa").show();
-$("#comidaMexicana").hide();
-$("#comidaItaliana").hide();
-$("#comidaVenezolana").hide();
-$(".circulos").hide();
+ $(".ch-img-3").click(function(){ 
+  $("#comidaJaponesa").show();
+  $("#comidaMexicana").hide();
+  $("#comidaItaliana").hide();
+  $("#comidaVenezolana").hide();
+  $(".circulos").hide();
 });
 
 
-$(".ch-img-4").click(function(){ 
-$("#comidaItaliana").show();
-$("#comidaJaponesa").hide();
-$("#comidaMexicana").hide();
-$("#comidaVenezolana").hide();
-$(".circulos").hide();
+ $(".ch-img-4").click(function(){ 
+  $("#comidaItaliana").show();
+  $("#comidaJaponesa").hide();
+  $("#comidaMexicana").hide();
+  $("#comidaVenezolana").hide();
+  $(".circulos").hide();
 });
 
-$(".ch-img-5").click(function(){ 
-$("#comidaVenezolana").show();
-$("#comidaJaponesa").hide();
-$("#comidaMexicana").hide();
-$("#comidaItaliana").hide();
-$(".circulos").hide();
+ $(".ch-img-5").click(function(){ 
+  $("#comidaVenezolana").show();
+  $("#comidaJaponesa").hide();
+  $("#comidaMexicana").hide();
+  $("#comidaItaliana").hide();
+  $(".circulos").hide();
 });
-
 
 // ---------------------------------------------
 //              SECCION NOTICIAS        
@@ -115,7 +114,7 @@ boton.addEventListener("click",function(){
   var newComments = document.createElement('div');
 
   //validar que textarea tenga un msje
-   if (comments.length == 0 || comments == null || comments == "")
+  if (comments.length == 0 || comments == null || comments == "")
   {
     // si no hay texto se deshabilita el boton
     var boton = getElementById("btn-comentario");
@@ -185,30 +184,28 @@ $(".pantallaPerfil").hide();
 // funcion para que al hacer click en el boton perfil se despliega la pantalla con 
 // el perfil
 $(".perfil").click(function(){
-  
+
   $(".pantallaPerfil").show();
   $(".first-section").hide();
   $(".containerFood").hide();
   $(".news").hide();
   $(".verMensaje").hide();
   $(".circulos").hide();
-$("#comidaJaponesa").hide();
-$("#comidaMexicana").hide();
-$("#comidaItaliana").hide();
-$("#comidaVenezolana").hide();
-$(".container-foods").hide();
+  $("#comidaVenezolana").hide();
+  $("#comidaJaponesa").hide();
+  $("#comidaMexicana").hide();
+  $("#comidaItaliana").hide();
 });
 
 
-
 window.onload = function(){
-$("#btn-google").click(function() {
-      console.log("Boton de google presionado!")
+  $("#btn-google").click(function() {
+    console.log("Boton de google presionado!")
     if (!firebase.auth().currentUser){
-        var provider = new firebase.auth.GoogleAuthProvider();
-        provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-        
-        console.log("Launching modal");
+      var provider = new firebase.auth.GoogleAuthProvider();
+      provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
+      console.log("Launching modal");
       firebase.auth().signInWithPopup(provider).then(function(result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
@@ -225,14 +222,15 @@ $("#btn-google").click(function() {
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
-            if (errorCode === 'auth/account-exists-with-different-credential'){
-              alert ('Es el mismo usuario');
-            }
-          });
-        }else{
-          console.log("Holo");
-          firebase.auth().signOut();
+        if (errorCode === 'auth/account-exists-with-different-credential'){
+          alert ('Es el mismo usuario');
         }
       });
+    }else{
+      console.log("Holo");
+      firebase.auth().signOut();
+    }
+  });
 }
+
 

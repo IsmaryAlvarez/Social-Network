@@ -26,28 +26,21 @@
 	<!-- Script de Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	
-	
-
-
+	<!-- Link de Funtes -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- Iconos -->
-	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!-- Script de Firebase-->
-
-</head>
+</head> 
 
 <body>
 	<!-- Splash Image -->
-<!--<div id="overlay">
-		<div id="overlay-content"><img src="assets/images/imagen-uno.png" alt="logo blanco">				<div id="circle"></div>
+<div id="overlay">
+		<div id="overlay-content" ><img src="assets/images/imagen-uno.png" alt="logo blanco">				<div id="circle"></div>
 	</div>
-</div> -->
+</div> 
 <!-- NAVBAR -->
 
 <section class="first-section">
@@ -79,6 +72,7 @@
 	</nav>
 </section>
 
+
 <!-- seccion Noticias y mas-->
 <section class="news">
 	
@@ -86,7 +80,7 @@
 	<div class="row">
 
 		<!-- colum amigos -->
-		<div class="col-lg-3 friends">
+		<div class="col-lg-3 hidden-md hidden-sm hidden-xs friends">
 
 			<div class="titulofriends">
 				<p class="tituloAmigos">Amigos</p>
@@ -187,28 +181,6 @@
 
 		<!-- COLUMNA PARA MIS POSTEOS, NOTICIAS Y LO MAS VISTO-->
 		<div class="col-lg-6 ">
-      
-<!-- seccion Noticias -->
-<section class="news">
-
-	<!-- <div class="container theNews"> -->
-		<!-- fila para noticias -->
-		<div class="row naranja">
-			<div class="col">
-				<p class="titleNew">Noticias</p>
-			</div> <!-- fin col -->
-		</div> <!-- fin fila -->
-
-		<!-- fila para imagen, comentarios y boton -->
-		<div class="row">
-			<!-- col para imagen -->
-			<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-6 col-12 col-xs-12">
-
-				<!-- contenedor de comentarios -->
-				<div class="comments">
-					
-					<!-- <div class="comment1"> -->
-
 
 			<div class="row">
 				<div class="col">
@@ -269,10 +241,9 @@
 			</div> <!-- fin posteo amigo -->
 
 		</div> <!-- fin columna para mis posteos y noticias -->
-	</div> <!-- fin row -->
 
 		<!-- columna lo + leido -->
-		<div class="col-lg-3 masLeido">
+		<div class="col-lg-3 hidden-md hidden-sm hidden-xs masLeido">
 
 			<div class="tituloLeido">
 				<p class="tituloLoMas">Lo + Visto</p>
@@ -307,6 +278,7 @@
 		  </div>
 
 		</div> <!-- fin col -->
+	</div> <!-- fin row -->
 
 	<!-- </div> --> <!-- fin contenedor -->
 </section> <!-- fin seccion noticias -->
@@ -342,14 +314,9 @@
 	</div>
 </div>
 
-  </div>
-	</nav>
-	<!---circulos-de colores-->
-	<section class="circulos">
 
 	<!---Circulos con imágenes-->
 	<section class="container-fluid circulos">
-
 		<ul class="ch-grid">
 	<li>
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ch-item ch-img-2">
@@ -390,10 +357,10 @@
 </ul>
 	</section>
 
-	<!-- container con las imagenes de comida-->
+	<!-- container con las imagenes -->
+	<div class="container-foods">
 
-	<div class="containerFood">
-
+	
 		<div class="tab-content dentro">
 		
 			<!-- contenedor de las imagenes comida japonesa -->
@@ -1021,63 +988,62 @@
 	</div><!--  fin container -->
 </section>
 
-	<!-- seccion con pantalla de perfil datos de la persona -->
-	<section class="pantallaPerfil">
-
-
-			<!-- fila para boton regreso y foto del perfil -->
-			<div class="row foto">	
-					
-				<!-- imagen perfil -->
-				<div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 ">
-				<!-- <div class="col-lg-4 col-lg-2 col-md-4 col-sm-4 col-xs-1 "> -->	
-					<a href=""><span class="glyphicon glyphicon-chevron-left iconBack" aria-hidden="true"></span></a>	
-				</div> <!-- fin columnas -->
-
-				<div class="col-lg-4  col-md-4 col-sm-6 col-lg-offset-2 col-xs-6 col-md-offset-2">
-				<!-- <div class="col-lg-4 col-lg-2 col-md-4 col-sm-4 col-xs-1 "> -->	
-					<img class="fotoPerfil" src="assets/images/imagenPerfil.jpg" alt="foto">
-				</div> <!-- fin columnas -->
-			</div><!-- fin row -->
-
-			<!-- fila para nombre usuario -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="nombreUsuario">Nombre</p>
-				</div> <!-- fin col -->
-			</div><!-- fin row -->
-
-			<!-- fila para texto de siguiendo -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="follow"><b>77</b> Siguiendo</p>
-				</div> <!-- fin col -->
-			</div><!-- fin row -->
-			
-			<!-- fila para texto de seguidos -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="follow"><b>50</b> Te Siguen</p>
-				</div> <!-- fin col -->
-			</div><!-- fin row -->
-
-			<!-- fila para descripcion de la persona -->
-			<div class="cajaDescription">
-				<div class="row">
-					<div class="col-md-12">
-						<p class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ab illo dolor hic eius est iure porro, sit commodi quisquam obcaecati consequatur laborum dolorem iste autem. Saepe quia, quaerat repudiandae!</p>
-					</div> <!-- fin col -->
-				</div><!-- fin row -->
-			</div>
-
-			
-		<!-- </div> --> <!-- fin containerPerfil -->
-
-	</section> <!-- fin seccion -->
-</section>
-	
-</section>
-
+<!-- seccion con pantalla de perfil datos de la persona -->
+ 	<section class="pantallaPerfil">
+ 
+ 
+ 			<!-- fila para boton regreso y foto del perfil -->
+ 			<div class="row foto">	
+ 					
+ 				<!-- imagen perfil -->
+ 				<div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 ">
+ 				<!-- <div class="col-lg-4 col-lg-2 col-md-4 col-sm-4 col-xs-1 "> -->	
+ 					<a href=""><span class="glyphicon glyphicon-chevron-left iconBack" aria-hidden="true"></span></a>	
+ 				</div> <!-- fin columnas -->
+ 
+ 				<div class="col-lg-4  col-md-4 col-sm-6 col-lg-offset-2 col-xs-6 col-md-offset-2">
+ 				<!-- <div class="col-lg-4 col-lg-2 col-md-4 col-sm-4 col-xs-1 "> -->	
+ 					<img class="fotoPerfil" src="assets/images/imagenPerfil.jpg" alt="foto">
+ 				</div> <!-- fin columnas -->
+ 			</div><!-- fin row -->
+ 
+ 			<!-- fila para nombre usuario -->
+ 			<div class="row">
+ 				<div class="col-md-12">
+ 					<p class="nombreUsuario">Nombre</p>
+ 				</div> <!-- fin col -->
+ 			</div><!-- fin row -->
+ 
+ 			<!-- fila para texto de siguiendo -->
+ 			<div class="row">
+ 				<div class="col-md-12">
+ 					<p class="follow"><b>77</b> Siguiendo</p>
+ 				</div> <!-- fin col -->
+ 			</div><!-- fin row -->
+ 			
+ 			<!-- fila para texto de seguidos -->
+ 			<div class="row">
+ 				<div class="col-md-12">
+ 					<p class="follow"><b>50</b> Te Siguen</p>
+ 				</div> <!-- fin col -->
+ 			</div><!-- fin row -->
+ 
+ 			<!-- fila para descripcion de la persona -->
+ 			<div class="cajaDescription">
+ 				<div class="row">
+ 					<div class="col-md-12">
+ 						<p class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ab illo dolor hic eius est iure porro, sit commodi quisquam obcaecati consequatur laborum dolorem iste autem. Saepe quia, quaerat repudiandae!</p>
+ 					</div> <!-- fin col -->
+ 				</div><!-- fin row -->
+ 			</div>
+ 
+ 			
+ 		<!-- </div> --> <!-- fin containerPerfil -->
+ 
+ 	</section> <!-- fin seccion -->
+ </section>
+ 	
+ </section>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 	<!-- Script circulo de progreso-->
