@@ -21,7 +21,6 @@
 
 	<!-- Iconos -->
 	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/icomoon/style.css">
 
 	<!-- Script de Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -38,18 +37,42 @@
 
 	<!-- Iconos -->
 	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!-- Script de Firebase-->
-
 </head>
+
+<!-- Script de Firebase-->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBrFeijRP1EFOPP3Q1RWt-PDq04eNPy-BI",
+    authDomain: "social-network-dc688.firebaseapp.com",
+    databaseURL: "https://social-network-dc688.firebaseio.com",
+    projectId: "social-network-dc688",
+    storageBucket: "social-network-dc688.appspot.com",
+    messagingSenderId: "899865228018"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <body>
 	<!-- Splash Image -->
-<!--<div id="overlay">
+	<!-- <div id="overlay">
 		<div id="overlay-content"><img src="assets/images/imagen-uno.png" alt="logo blanco">				<div id="circle"></div>
 	</div>
 </div> -->
 <!-- NAVBAR -->
 
+
+<section id="inicio">
+	
+</section>
+
+<button class="fc-loggin-button fc-sing-in-button mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect" id="btn-google">
+Ingresa con Google</button>
+
+
+
+<section id="page" style="display: none">
 <section class="first-section">
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
@@ -69,340 +92,58 @@
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#Viaja" class="perfil">Perfil</a></li> <!-- MODIFIQUE!!!!!!-->
-					<li><a href="https://www.youtube.com/user/QuierocCupcakes" target="_blank" class="recetas">Recetas</a></li> 
-					<li><a href="#Viaja" class="restaurant">Restaurantes</a></li> 
+					<li><a href="#Viaja">Perfil</a></li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Recetas <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">- Creadas</a></li>
+							<li><a href="">- Guardadas</a></li>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Restaurantes <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">- Sugerencias</a></li>
+							<li><a href="">- Guardadas</a></li>
+						</ul>
+					</li>
 
 				</ul>
 			</div>
+
+
+
 		</div>
 	</nav>
-</section>
-
-<!-- seccion Noticias y mas-->
-<section class="news">
 	
-	<!-- div para amigos y mis posteos-->
-	<div class="row">
-
-		<!-- colum amigos -->
-		<div class="col-lg-3 friends">
-
-			<div class="titulofriends">
-				<p class="tituloAmigos">Amigos</p>
-			</div>
-			
-			<!-- amigo 1 -->
-			<div class="amigooo">
-				<!-- columna de foto -->
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<!-- columna de imagen de contacto -->
-						<img class="amigo" src="assets/images/amigos/anamaria.jpg" alt="">
-					</div>
-					<!-- columna de nombre -->
-					<div class="col-sm-8 col-md-8">
-						<p class="nombreAmigo" >Rosa Perez</p>
-					</div>
-				</div> <!-- fin fila -->
-			</div>
-			
-			<!-- amigo 2 -->
-			<div class="amigooo">
-				<!-- columna de foto -->
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<!-- columna de imagen de contacto -->
-						<img class="amigo" src="assets/images/amigos/jose.jpg" alt="">
-					</div>
-					<!-- columna de nombre -->
-					<div class="col-sm-8 col-md-8">
-						<p class="nombreAmigo" >Lolo Lala</p>
-					</div>
-				</div> <!-- fin fila -->
-			</div>
-			
-			<!-- amigo 3 -->
-			<div class="amigooo">
-				<!-- columna de foto -->
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<!-- columna de imagen de contacto -->
-						<img class="amigo" class="amigo" src="assets/images/amigos/gian.jpg" alt="">
-					</div>
-					<!-- columna de nombre -->
-					<div class="col-sm-8 col-md-8">
-						<p class="nombreAmigo" >Marcela Q.</p>
-					</div>
-				</div> <!-- fin fila -->
-			</div>
-			
-			<!-- amigo 4 -->
-			<div class="amigooo">
-				<!-- columna de foto -->
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<!-- columna de imagen de contacto -->
-						<img class="amigo" src="assets/images/amigos/katy.jpg" alt="">
-					</div>
-					<!-- columna de nombre -->
-					<div class="col-sm-8 col-md-8">
-						<p class="nombreAmigo" >Papas Lover</p>
-					</div>
-				</div> <!-- fin fila -->
-			</div>
-	
-			<!-- amigo 5 -->
-			<div class="amigooo">
-				<!-- columna de foto -->
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<!-- columna de imagen de contacto -->
-						<img class="amigo" class="amigo" src="assets/images/amigos/mariana.jpg" alt="">
-					</div>
-					<!-- columna de nombre -->
-					<div class="col-sm-8 col-md-8">
-						<p class="nombreAmigo" >Olimpia</p>
-					</div>
-				</div> <!-- fin fila -->
-			</div>
-
-			<!-- amigo 6 -->
-			<div class="amigooo">
-				<!-- columna de foto -->
-				<div class="row">
-					<div class="col-sm-2 col-md-2">
-						<!-- columna de imagen de contacto -->
-						<img class="amigo" class="amigo" src="assets/images/amigos/aldo.jpg" alt="">
-					</div>
-					<!-- columna de nombre -->
-					<div class="col-sm-8 col-md-8">
-						<p class="nombreAmigo" >Homer S</p>
-					</div>
-				</div> <!-- fin fila -->
-			</div>
-
-		</div> <!-- fin columna amigos -->
-
-
-		<!-- COLUMNA PARA MIS POSTEOS, NOTICIAS Y LO MAS VISTO-->
-		<div class="col-lg-6 ">
-      
-<!-- seccion Noticias -->
-<section class="news">
-
-	<!-- <div class="container theNews"> -->
-		<!-- fila para noticias -->
-		<div class="row naranja">
-			<div class="col">
-				<p class="titleNew">Noticias</p>
-			</div> <!-- fin col -->
-		</div> <!-- fin fila -->
-
-		<!-- fila para imagen, comentarios y boton -->
+	<!-- container con las imagenes -->
+	<div class="container">
+		
 		<div class="row">
-			<!-- col para imagen -->
-			<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-6 col-12 col-xs-12">
+			<!-- <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center"> -->
+			<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-10 col-xs-10 text-center">
 
-				<!-- contenedor de comentarios -->
-				<div class="comments">
-					
-					<!-- <div class="comment1"> -->
+				<div class="tabpanel">
+					<ul class="nav nav-tabs" role="tablist">
+					  <li role="presentation" class="active"><a href="#comidaJaponesa" aria-controls="comidaJaponesa" data-toggle="tab" role="tab">Japonesa</a></li>
+					  <li role="presentation"><a href="#comidaItaliana" aria-controls="comidaItaliana" data-toggle="tab" role="tab">Italiana</a></li>
+					  <li role="presentation"><a href="#comidaMexicana" aria-controls="comidaMexicana" data-toggle="tab" role="tab">Mexicana</a></li>
+					  <li role="presentation"><a href="#comidaVenezolana" aria-controls="comidaVenezolana" data-toggle="tab" role="tab">Venezolana</a></li>
+					</ul>
+				</div> <!-- fin tabpanel -->
 
-
-			<div class="row">
-				<div class="col">
-					<p class="titleNew">Noticias</p>
-				</div> <!-- fin col -->
-			</div> <!-- fin fila -->
-			
-			<div class="comments">
-
-				<!-- imagen usuario -->
-				<img class="fotoPost" src="assets/images/imagenPerfil.jpg" alt="foto">
-
-				<!-- textarea para mensaje -->
-				<textarea name="comment" id="comment" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
-
-				<!-- boton agregar comentario-->
-				<div class="btn">
-					<p id="btn-comentario">Post!</p>
-				</div>
-				<!-- icono camara -->
-				<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
-
-			</div><!-- fin comments -->
-
-			<!-- contenedor donde iran los mensajes posteados -->
-			<div class="verMensaje">
-				<div id="cont"></div>
-			</div>
-
-			<!-- posteo de amigos -->
-			<div class="friendPost">
-				<p class="posteoLolo"><b>Posteado por Lolo Lala</b></p>
-				<!-- fila para imagen y comentario -->
-				<div class="row">
-					<div class="col-lg-3">
-						<img class="loveImg" src="assets/images/amar.jpg" alt="love">
-					</div><!-- fin col -->
-					<div class="col-lg-8">
-						<p>No puedo dejar de amar la comida chatarra</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam architecto veniam, possimus repellat commodi at vero</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- posteo de amigos -->
-			<div class="friendPost">
-				<p class="posteoLolo"><b>Posteado por Marcela Q.</b></p>
-				<!-- fila para imagen y comentario -->
-				<div class="row">
-					<div class="col-lg-3">
-						<img class="loveImg" src="assets/images/naranja.jpg" alt="love">
-					</div><!-- fin col -->
-					<div class="col-lg-8">
-						<p><a href="#">3 preparaciones con naranjas</a></p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam architecto veniam, possimus repellat commodi at vero</p>
-					</div>
-				</div><!-- fin row -->
-			</div> <!-- fin posteo amigo -->
-
-		</div> <!-- fin columna para mis posteos y noticias -->
-	</div> <!-- fin row -->
-
-		<!-- columna lo + leido -->
-		<div class="col-lg-3 masLeido">
-
-			<div class="tituloLeido">
-				<p class="tituloLoMas">Lo + Visto</p>
-			</div>
-			
-			<!-- thumbnail con temas mas vistos -->
-			<!-- thumbnail 1 -->
-		  <div class="thumbnail">
-		    <a href="#"><img class="pizza" src="assets/images/mejorPizza.jpg" alt="pizza"></a>
-		    <div class="caption">
-		      <h4>La mejor pizza del mundo!!</h4>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		    </div>
-		  </div>
-			
-			<!-- thumbnail 2 -->
-		  <div class="thumbnail">
-		    <a href="#"><img class="porn" src="assets/images/comidaPorno.jpg" alt="pizza"></a>
-		    <div class="caption">
-		      <h4>La comida tambien puede ser porno</h4>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		    </div>
-		  </div>
-
-		  <!-- thumbnail 3 -->
-		  <div class="thumbnail">
-		    <a href="#"><img class="everywhere" src="assets/images/everywhere.jpg" alt="pizza"></a>
-		    <div class="caption">
-		      <h4>Chatarra chatarra everywhere</h4>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		    </div>
-		  </div>
-
-		</div> <!-- fin col -->
-
-	<!-- </div> --> <!-- fin contenedor -->
-</section> <!-- fin seccion noticias -->
-
-
-  <!-- MODAL PARA SUBIR FOTO-->
-  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  	<!-- tamano del contenedor, por defecto 600px -->
-	<div class="modal-dialog" role="document">
-		<!-- esta asociado estilos de fondo, bordes, sombreados -->
-		<div class="modal-content">
-			<!-- encabezado -->
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Subir foto</h4>
-			</div>
-			<!-- contenido del modal -->
-			<div class="modal-body">
-				<!-- titulo foto -->
-				<input id="inputAgregarFoto" type="text" class="form-control" placeholder="Pon un nombre a la foto" aria-describedby="titulo">
-				<br>
-				<!-- url -->
-				<input id="inputAgregarFoto" type="text" class="form-control" placeholder="Agrega url de la foto" aria-describedby="titulo">
-				<br>
-				<div class="btn">
-	      	<p class="btn-subirFoto">Subir</p>
-	      </div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-  </div>
-	</nav>
-	<!---circulos-de colores-->
-	<section class="circulos">
-
-	<!---Circulos con imágenes-->
-	<section class="container-fluid circulos">
-
-		<ul class="ch-grid">
-	<li>
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ch-item ch-img-2">
-			<div class="ch-info">
-				<h3>Méxicana</h3>
-				<p>Recetas<a class="mostrar-1" href="#">Ver mas</a></p>
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ch-item ch-img-3">
-			<div class="ch-info">
-				<h3>Japonesa</h3>
-				<p>Recetas<a class="mostrar-2" href="#">Ver mas</a></p>
-			</div>
-		</div>
-	</li>
-</ul>
-	</section>
-	<section class="container-fluid circulos">
-		<ul class="ch-grid">
-	<li>
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ch-item ch-img-4">
-			<div class="ch-info">
-				<h3>Italiana</h3>
-				<p>Recetas<a class="mostrar-3" href="#">Ver mas</a></p>
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ch-item ch-img-5">
-			<div class="ch-info">
-				<h3>Venezolana</h3>
-				<p>Recetas<a class="mostrar-4" href="#">Ver mas</a></p>
-			</div>
-		</div>
-	</li>
-</ul>
-	</section>
-
-	<!-- container con las imagenes de comida-->
-
-	<div class="containerFood">
-
+			</div> <!-- fin cols -->
+		</div> <!-- fin row -->
+		
 		<div class="tab-content dentro">
 		
 			<!-- contenedor de las imagenes comida japonesa -->
 			<div role="tabpanel" class="container tab-pane active" id="comidaJaponesa">
 
 				<!-- primera fila con 3 imagenes-->
-				
+				<div class="row">
 					<!-- imagen 1 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 
 						<!-- thumbnail con primera foto -->
 						<div class="thumbnail">
@@ -415,12 +156,20 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -431,7 +180,7 @@
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 					<!-- imagen 2 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 					
 							<img class="japonesa" src="assets/images/restaurants/japonesa2.jpg" alt="japonesa2">
@@ -439,12 +188,20 @@
 								<h3>Ramen</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -455,7 +212,7 @@
 					</div> <!-- fin col -->
 
 					<!-- imagen 3 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 
 						<img class="japonesa" src="assets/images/restaurants/japonesa7.jpg" alt="japonesa7">
@@ -465,12 +222,20 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -480,27 +245,36 @@
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 
-				 <!-- fin primera fila -->
+				</div> <!-- fin primera fila -->
 
 					
 					<!-- segunda fila con las 3 imagenes restantes-->
-					
+					<div class="row">
 						<!-- imagen 4 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 						<img class="japonesa" src="assets/images/restaurants/japonesa4.jpg" alt="japonesa4">
 							<div class="caption">
 								<h3>Rolls</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
+
 									</div> <!-- fin row -->	
 
 							</div> <!-- fin caption -->
@@ -508,19 +282,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 5 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="japonesa" src="assets/images/restaurants/japonesa5.jpg" alt="japonesa5">
 								<div class="caption">
 									<h3>Bentos</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -531,19 +313,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 6 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="japonesa" src="assets/images/restaurants/japonesa6.jpg" alt="japonesa6">
 								<div class="caption">
 									<h3>Takoyakis</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -561,8 +351,9 @@
 			<div role="tabpanel" class="container tab-pane" id="comidaItaliana">
 
 				<!-- primera fila con las primeras 3 imagenes -->
-							<!-- imagen 1 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+				<div class="row">
+					<!-- imagen 1 -->
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 
 								<img class="italiana" src="assets/images/restaurants/italian-1.jpg" alt="italiana1">
@@ -571,22 +362,31 @@
 								<h3>Ñoquis</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
-						</div> <!-- fin caption -->
+									</div> <!-- fin row -->	
+
+							</div> <!-- fin caption -->
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
-					</div>
 
 					<!-- imagen 2 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 					
 							<img class="italiana" src="assets/images/restaurants/italiana2.png" alt="italiana2">
@@ -594,12 +394,20 @@
 								<h3>Tallarines</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -610,19 +418,27 @@
 					</div> <!-- fin col -->
 
 					<!-- imagen 3 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 						<img class="italiana" src="assets/images/restaurants/italiana3.jpg" alt="italiana3">
 							<div class="caption">
 								<h3>Lasañas</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -632,23 +448,33 @@
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 
-				
+				</div> <!-- fin primera fila -->
 					
+					<!-- segunda fila  con las 3 imagenes restantes-->
+					<div class="row">
 
 						<!-- imagen 4 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 						<img class="italiana" src="assets/images/restaurants/italiana4.jpg" alt="italiana4">
 							<div class="caption">
 								<h3>Fideos</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -659,19 +485,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 5 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="italiana" src="assets/images/restaurants/italiana5.jpg" alt="italiana5">
 								<div class="caption">
 									<h3>Pizzas</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -682,19 +516,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 6 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="italiana" src="assets/images/restaurants/italiana6.jpg" alt="italiana6">
 								<div class="caption">
 									<h3>Entradas</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -712,9 +554,9 @@
 			<div role="tabpanel" class="container tab-pane" id="comidaMexicana">
 
 				<!-- primera fila  con las tres primeras imagenes-->
-
+				<div class="row">
 					<!-- imagen 1 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 
 								<img class="mexicana" src="assets/images/restaurants/mexicana.jpg" alt="mexicana">
@@ -723,12 +565,20 @@
 								<h3>Tacos</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -739,7 +589,7 @@
 					</div> <!-- fin col -->
 
 					<!-- imagen 2 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 					
 							<img class="mexicana" src="assets/images/restaurants/mexicana2.jpg" alt="mexicana2">
@@ -747,12 +597,20 @@
 								<h3>Aperitivos</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -763,34 +621,43 @@
 					</div> <!-- fin col -->
 
 					<!-- imagen 3 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 						<img class="mexicana" src="assets/images/restaurants/mexicana3.jpg" alt="mexicana3">
 							<div class="caption">
 								<h3>Quesadillas</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
+
 									</div> <!-- fin row -->	
 
 							</div> <!-- fin caption -->
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 
-
+				</div> <!-- fin primera fila -->
 					
 					<!-- segunda fila con las 3 imagenes restantes-->
-
+					<div class="row">
 
 						<!-- imagen 4 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 					
 							<img class="mexicana" src="assets/images/restaurants/mexicana4.jpg" alt="mexicana4">
@@ -798,12 +665,20 @@
 								<h3>Guacamoles</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -814,19 +689,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 5 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="mexicana" src="assets/images/restaurants/mexicana5.jpg" alt="mexicana5">
 								<div class="caption">
 									<h3>Burritos</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -837,19 +720,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 6 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="mexicana" src="assets/images/restaurants/mexicana6.jpg" alt="mexicana6">
 								<div class="caption">
 									<h3>Sopas</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -859,6 +750,7 @@
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 
+					</div> <!-- fin segunda fila -->
 
 			</div>  <!-- fin contenedor de las imagenes -->
 
@@ -868,8 +760,9 @@
 			<div role="tabpanel" class="container tab-pane" id="comidaVenezolana">
 
 				<!-- primera fila con las 3 primeras imagenes-->
+				<div class="row">
 					<!-- imagen 1 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 
 								<img class="venezolana" src="assets/images/restaurants/venezolana1.jpg" alt="venezolana1">
@@ -878,12 +771,20 @@
 								<h3>Arepas</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -894,7 +795,7 @@
 					</div> <!-- fin col -->
 
 					<!-- imagen 2 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 					
 							<img class="venezolana" src="assets/images/restaurants/venezolana2.jpg" alt="venezolana2">
@@ -902,12 +803,20 @@
 								<h3>Empanadas</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -918,19 +827,27 @@
 					</div> <!-- fin col -->
 
 					<!-- imagen 3 -->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 						<div class="thumbnail">
 						<img class="venezolana" src="assets/images/restaurants/venezolana3.jpg" alt="venezolana3">
 							<div class="caption">
 								<h3>Relleno Arepas</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -940,11 +857,13 @@
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 
-
-
+				</div> <!-- fin primera fila -->
+					
+					<!-- segunda fila con las tres ultimas imagenes-->
+					<div class="row">
 
 						<!-- imagen 4 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 					
 								<img class="mexicana" src="assets/images/restaurants/venezolana4.jpg" alt="venezolana4">
@@ -952,12 +871,20 @@
 									<h3>....</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -968,19 +895,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 5 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="venezolana" src="assets/images/restaurants/venezolana5.jpg" alt="venezolana5">
 								<div class="caption">
 									<h3>.....</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -991,19 +926,27 @@
 					</div> <!-- fin col -->
 
 						<!-- imagen 6 -->
-						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center">
 							<div class="thumbnail">
 							<img class="venezolana" src="assets/images/restaurants/venezolana6.jpg" alt="venezolana6">
 								<div class="caption">
-									<h3>Cachapa</h3>
+									<h3>Tallarines chinos</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<div class="row">
+									<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+										</div>
+										<!-- boton -->
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<p><a href="#" class="btn btn-default" role="button">Button</a></p>
+										</div>
 										<!-- icono agregar -->
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-heart" aria-hidden="true"></a>
 										</div>
 
-										<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-right">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 											 <a href="#" class="glyphicon glyphicon-trash" aria-hidden="true"></a>
 										</div>
 
@@ -1013,7 +956,7 @@
 						</div> <!-- fin thumbnail -->
 					</div> <!-- fin col -->
 
-				 <!-- fin segunda fila -->
+					</div> <!-- fin segunda fila -->
 
 			</div>  <!-- fin contenedor de las imagenes -->
 
@@ -1021,64 +964,8 @@
 	</div><!--  fin container -->
 </section>
 
-	<!-- seccion con pantalla de perfil datos de la persona -->
-	<section class="pantallaPerfil">
 
 
-			<!-- fila para boton regreso y foto del perfil -->
-			<div class="row foto">	
-					
-				<!-- imagen perfil -->
-				<div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 ">
-				<!-- <div class="col-lg-4 col-lg-2 col-md-4 col-sm-4 col-xs-1 "> -->	
-					<a href=""><span class="glyphicon glyphicon-chevron-left iconBack" aria-hidden="true"></span></a>	
-				</div> <!-- fin columnas -->
-
-				<div class="col-lg-4  col-md-4 col-sm-6 col-lg-offset-2 col-xs-6 col-md-offset-2">
-				<!-- <div class="col-lg-4 col-lg-2 col-md-4 col-sm-4 col-xs-1 "> -->	
-					<img class="fotoPerfil" src="assets/images/imagenPerfil.jpg" alt="foto">
-				</div> <!-- fin columnas -->
-			</div><!-- fin row -->
-
-			<!-- fila para nombre usuario -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="nombreUsuario">Nombre</p>
-				</div> <!-- fin col -->
-			</div><!-- fin row -->
-
-			<!-- fila para texto de siguiendo -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="follow"><b>77</b> Siguiendo</p>
-				</div> <!-- fin col -->
-			</div><!-- fin row -->
-			
-			<!-- fila para texto de seguidos -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="follow"><b>50</b> Te Siguen</p>
-				</div> <!-- fin col -->
-			</div><!-- fin row -->
-
-			<!-- fila para descripcion de la persona -->
-			<div class="cajaDescription">
-				<div class="row">
-					<div class="col-md-12">
-						<p class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ab illo dolor hic eius est iure porro, sit commodi quisquam obcaecati consequatur laborum dolorem iste autem. Saepe quia, quaerat repudiandae!</p>
-					</div> <!-- fin col -->
-				</div><!-- fin row -->
-			</div>
-
-			
-		<!-- </div> --> <!-- fin containerPerfil -->
-
-	</section> <!-- fin seccion -->
-</section>
-	
-</section>
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 	<!-- Script circulo de progreso-->
 	<script src="assets/jquery-circle-progress-1.2.2/dist/circle-progress.js"></script>
@@ -1088,18 +975,6 @@
 
 	<!-- Script js-->
 	<script src="assets/js/app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBrFeijRP1EFOPP3Q1RWt-PDq04eNPy-BI",
-    authDomain: "social-network-dc688.firebaseapp.com",
-    databaseURL: "https://social-network-dc688.firebaseio.com",
-    projectId: "social-network-dc688",
-    storageBucket: "social-network-dc688.appspot.com",
-    messagingSenderId: "899865228018"
-  };
-  firebase.initializeApp(config);
-</script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </body>
 </html>
