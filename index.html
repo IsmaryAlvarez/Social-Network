@@ -79,6 +79,115 @@
 	</nav>
 </section>
 
+<!-- seccion Noticias y mas-->
+<section class="news">
+	
+	<!-- div para amigos y mis posteos-->
+	<div class="row">
+
+		<!-- colum amigos -->
+		<div class="col-lg-3 friends">
+
+			<div class="titulofriends">
+				<p class="tituloAmigos">Amigos</p>
+			</div>
+			
+			<!-- amigo 1 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" src="assets/images/amigos/anamaria.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Rosa Perez</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+			
+			<!-- amigo 2 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" src="assets/images/amigos/jose.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Lolo Lala</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+			
+			<!-- amigo 3 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" class="amigo" src="assets/images/amigos/gian.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Marcela Q.</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+			
+			<!-- amigo 4 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" src="assets/images/amigos/katy.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Papas Lover</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+	
+			<!-- amigo 5 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" class="amigo" src="assets/images/amigos/mariana.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Olimpia</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+
+			<!-- amigo 6 -->
+			<div class="amigooo">
+				<!-- columna de foto -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2">
+						<!-- columna de imagen de contacto -->
+						<img class="amigo" class="amigo" src="assets/images/amigos/aldo.jpg" alt="">
+					</div>
+					<!-- columna de nombre -->
+					<div class="col-sm-8 col-md-8">
+						<p class="nombreAmigo" >Homer S</p>
+					</div>
+				</div> <!-- fin fila -->
+			</div>
+
+		</div> <!-- fin columna amigos -->
+
+
+		<!-- COLUMNA PARA MIS POSTEOS, NOTICIAS Y LO MAS VISTO-->
+		<div class="col-lg-6 ">
+      
 <!-- seccion Noticias -->
 <section class="news">
 
@@ -100,60 +209,110 @@
 					
 					<!-- <div class="comment1"> -->
 
-						<div class="row">
 
-							<div class="col-lg-2">
-								<!-- imagen usuario -->
-								<img class="fotoPost" src="assets/images/imagenPerfil.jpg" alt="foto">
-								
-								<!-- imput -->
-								<!-- <div class="input">
-									<input id="writePost" type="text" class="form-control post" placeholder="Escribe un comentario" aria-describedby="titulo">
-								</div> --> <!-- fin input -->
-								
-								<!-- textarea para mensaje -->
-								<textarea name="comment" id="comment" cols="50" rows="5" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
+			<div class="row">
+				<div class="col">
+					<p class="titleNew">Noticias</p>
+				</div> <!-- fin col -->
+			</div> <!-- fin fila -->
+			
+			<div class="comments">
 
-							</div> <!-- fin col -->
-						</div> <!-- fin fila -->
+				<!-- imagen usuario -->
+				<img class="fotoPost" src="assets/images/imagenPerfil.jpg" alt="foto">
 
+				<!-- textarea para mensaje -->
+				<textarea name="comment" id="comment" placeholder="Escriba mensaje"></textarea> <!-- cols y rows determinaran el alto y ancho, se le puede dar estilo con css -->
 
-					<!-- </div> --> <!-- fin comment1 -->
+				<!-- boton agregar comentario-->
+				<div class="btn">
+					<p id="btn-comentario">Post!</p>
+				</div>
+				<!-- icono camara -->
+				<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
 
-	          <div class="comment2">
-	          	<!-- boton agregar comentario-->
-	          	<div class="btn">
-	          		<p class="btn-comentario" onclick="add()">Comentar</p>
-	          	</div>
-	          	<!-- icono camara -->
-	          	<a href="" data-toggle="modal" data-target="#miModal"><span class="icon-camera fotos"></span></a>
-	          </div> <!-- fin comment2 -->
+			</div><!-- fin comments -->
 
+			<!-- contenedor donde iran los mensajes posteados -->
+			<div class="verMensaje">
+				<div id="cont"></div>
+			</div>
 
+			<!-- posteo de amigos -->
+			<div class="friendPost">
+				<p class="posteoLolo"><b>Posteado por Lolo Lala</b></p>
+				<!-- fila para imagen y comentario -->
+				<div class="row">
+					<div class="col-lg-3">
+						<img class="loveImg" src="assets/images/amar.jpg" alt="love">
+					</div><!-- fin col -->
+					<div class="col-lg-8">
+						<p>No puedo dejar de amar la comida chatarra</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam architecto veniam, possimus repellat commodi at vero</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- posteo de amigos -->
+			<div class="friendPost">
+				<p class="posteoLolo"><b>Posteado por Marcela Q.</b></p>
+				<!-- fila para imagen y comentario -->
+				<div class="row">
+					<div class="col-lg-3">
+						<img class="loveImg" src="assets/images/naranja.jpg" alt="love">
+					</div><!-- fin col -->
+					<div class="col-lg-8">
+						<p><a href="#">3 preparaciones con naranjas</a></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam architecto veniam, possimus repellat commodi at vero</p>
+					</div>
+				</div><!-- fin row -->
+			</div> <!-- fin posteo amigo -->
 
-				</div> <!-- fin contenedor comentarios -->
+		</div> <!-- fin columna para mis posteos y noticias -->
+	</div> <!-- fin row -->
 
-			</div> <!-- fin col -->
-		</div> <!-- fin row -->
+		<!-- columna lo + leido -->
+		<div class="col-lg-3 masLeido">
+
+			<div class="tituloLeido">
+				<p class="tituloLoMas">Lo + Visto</p>
+			</div>
+			
+			<!-- thumbnail con temas mas vistos -->
+			<!-- thumbnail 1 -->
+		  <div class="thumbnail">
+		    <a href="#"><img class="pizza" src="assets/images/mejorPizza.jpg" alt="pizza"></a>
+		    <div class="caption">
+		      <h4>La mejor pizza del mundo!!</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		  </div>
+			
+			<!-- thumbnail 2 -->
+		  <div class="thumbnail">
+		    <a href="#"><img class="porn" src="assets/images/comidaPorno.jpg" alt="pizza"></a>
+		    <div class="caption">
+		      <h4>La comida tambien puede ser porno</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		  </div>
+
+		  <!-- thumbnail 3 -->
+		  <div class="thumbnail">
+		    <a href="#"><img class="everywhere" src="assets/images/everywhere.jpg" alt="pizza"></a>
+		    <div class="caption">
+		      <h4>Chatarra chatarra everywhere</h4>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		    </div>
+		  </div>
+
+		</div> <!-- fin col -->
 
 	<!-- </div> --> <!-- fin contenedor -->
 </section> <!-- fin seccion noticias -->
 
 
-
-
-<!-- seccion donde se publica el mensaje -->
-<section class="verMensaje">
-
-	<div id="cont"></div>
-
-</section>
-
-
-
-
-
-  <!-- Modal para subir foto-->
+  <!-- MODAL PARA SUBIR FOTO-->
   <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   	<!-- tamano del contenedor, por defecto 600px -->
 	<div class="modal-dialog" role="document">
@@ -183,8 +342,14 @@
 	</div>
 </div>
 
+  </div>
+	</nav>
+	<!---circulos-de colores-->
+	<section class="circulos">
+
 	<!---Circulos con imágenes-->
 	<section class="container-fluid circulos">
+
 		<ul class="ch-grid">
 	<li>
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ch-item ch-img-2">
@@ -225,10 +390,10 @@
 </ul>
 	</section>
 
-	<!-- container con las imagenes -->
-	<div class="container-foods">
+	<!-- container con las imagenes de comida-->
 
-	
+	<div class="containerFood">
+
 		<div class="tab-content dentro">
 		
 			<!-- contenedor de las imagenes comida japonesa -->
